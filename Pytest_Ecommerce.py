@@ -275,8 +275,6 @@ print("pytest + ipytest ready.")
 # MAGIC         assert self._clean("Philip Fox") == "Philip Fox"
 # MAGIC
 # MAGIC     def test_apostrophe_preserved(self):
-# MAGIC         # Known failing test — documents issue #8
-# MAGIC         # Fix: update regex from [^a-zA-Z\s] to [^a-zA-Z\s'] in validate_and_clean_names
 # MAGIC         result = self._clean("Mary O'Rourke")
 # MAGIC         assert "'" in result, "Apostrophe stripped — fix regex in validate_and_clean_names"
 # MAGIC
